@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :test do
 	 gem 'rspec-rails', '~> 3.0'
 	 gem 'simplecov', :require => false
+  gem 'shoulda-matchers'
 end
 
 group :development, :test do
