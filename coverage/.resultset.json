@@ -237,9 +237,33 @@
         1,
         1,
         null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/bradleyhintze/Desktop/dev/RailsModels/jakes-agile-rspec/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
         null
       ]
     },
-    "timestamp": 1436293714
+    "timestamp": 1436298193
   }
 }

@@ -4,7 +4,8 @@ RSpec.describe Trip, type: :model do
 
   context "instance methods" do
       before(:each) do
-        @trip = Trip.create!(name: 'Hawaii', total_miles: 5000)
+        @user = User.create!(name: 'Bradley', email: 'yes@yes.com', about: 'He is pretty cool')
+        @trip = Trip.create!(name: 'Hawaii', total_miles: 5000, user_id: @user.id)
         @trip2 = Trip.create!(name: 'Provo', total_miles: 50)
       end
 
@@ -17,6 +18,13 @@ RSpec.describe Trip, type: :model do
           expect(@trip2.really_far?).to eq(false)
         end
       end
+
+      describe "#print_user" do
+        it "prints user name" do
+          expect(@trip.user.name).to eq('Bradley')
+        end
+      end
+
   end
 
   context "class methods" do

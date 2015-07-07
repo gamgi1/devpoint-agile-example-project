@@ -9,4 +9,9 @@ class Trip < ActiveRecord::Base
 	def self.by_total_miles
 		order(total_miles: :desc)
 	end
+
+	def print_user
+		self.user.name
+	end
+
 end
