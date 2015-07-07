@@ -1,0 +1,224 @@
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "duration" integer, "destination_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "color" varchar, "seats" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "destinations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "trip_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "total_miles" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "about" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150707051609')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150707050721')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150707050728')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150707050806')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150707050820')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:23:31.127346"], ["updated_at", "2015-07-07 18:23:31.127346"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:23:36.542960"], ["updated_at", "2015-07-07 18:23:36.542960"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:23:48.240710"], ["updated_at", "2015-07-07 18:23:48.240710"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:24:19.311900"], ["updated_at", "2015-07-07 18:24:19.311900"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:25:03.712537"], ["updated_at", "2015-07-07 18:25:03.712537"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:25:03.715721"], ["updated_at", "2015-07-07 18:25:03.715721"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:25:03.719210"], ["updated_at", "2015-07-07 18:25:03.719210"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:25:03.720753"], ["updated_at", "2015-07-07 18:25:03.720753"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:26.547832"], ["updated_at", "2015-07-07 18:27:26.547832"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:26.551028"], ["updated_at", "2015-07-07 18:27:26.551028"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:26.554836"], ["updated_at", "2015-07-07 18:27:26.554836"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:26.556840"], ["updated_at", "2015-07-07 18:27:26.556840"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:26.560956"], ["updated_at", "2015-07-07 18:27:26.560956"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:26.562796"], ["updated_at", "2015-07-07 18:27:26.562796"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:33.786231"], ["updated_at", "2015-07-07 18:27:33.786231"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:33.789440"], ["updated_at", "2015-07-07 18:27:33.789440"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:33.792864"], ["updated_at", "2015-07-07 18:27:33.792864"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:33.794319"], ["updated_at", "2015-07-07 18:27:33.794319"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:33.798183"], ["updated_at", "2015-07-07 18:27:33.798183"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:33.800494"], ["updated_at", "2015-07-07 18:27:33.800494"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:42.408969"], ["updated_at", "2015-07-07 18:27:42.408969"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:42.412221"], ["updated_at", "2015-07-07 18:27:42.412221"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:42.416113"], ["updated_at", "2015-07-07 18:27:42.416113"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:42.418014"], ["updated_at", "2015-07-07 18:27:42.418014"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:27:42.421458"], ["updated_at", "2015-07-07 18:27:42.421458"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:27:42.424074"], ["updated_at", "2015-07-07 18:27:42.424074"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:28:27.277931"], ["updated_at", "2015-07-07 18:28:27.277931"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:28:27.281145"], ["updated_at", "2015-07-07 18:28:27.281145"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:28:27.284522"], ["updated_at", "2015-07-07 18:28:27.284522"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:28:27.286699"], ["updated_at", "2015-07-07 18:28:27.286699"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:28:27.291075"], ["updated_at", "2015-07-07 18:28:27.291075"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:28:27.293436"], ["updated_at", "2015-07-07 18:28:27.293436"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  ORDER BY "trips"."total_miles" DESC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:28:34.043931"], ["updated_at", "2015-07-07 18:28:34.043931"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:28:34.047094"], ["updated_at", "2015-07-07 18:28:34.047094"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:28:34.050412"], ["updated_at", "2015-07-07 18:28:34.050412"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:28:34.051798"], ["updated_at", "2015-07-07 18:28:34.051798"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hawaii"], ["total_miles", 5000.0], ["created_at", "2015-07-07 18:28:34.055534"], ["updated_at", "2015-07-07 18:28:34.055534"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("name", "total_miles", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Provo"], ["total_miles", 50.0], ["created_at", "2015-07-07 18:28:34.057652"], ["updated_at", "2015-07-07 18:28:34.057652"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTrip Load (0.5ms)[0m  [1mSELECT  "trips".* FROM "trips"  ORDER BY "trips"."total_miles" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
